@@ -1,0 +1,33 @@
+{
+  "name": "crypto-multivault",
+  "version": "1.0.0",
+  "description": "A multi-pool ERC20 staking protocol with time-lock multipliers and configurable rewards.",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:local": "hardhat run scripts/deploy-local-demo.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "staking",
+    "defi",
+    "hardhat",
+    "erc20",
+    "smart-contracts"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.10",
+    "solidity-coverage": "^0.8.12"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
